@@ -17,7 +17,7 @@ import javax.imageio.ImageIO;
 import main.PanelPresentacion;
 
 /**
- * Parametros tiene como función llevar un control centralizado de toda 
+ * Parametros tiene como función llevar un control centralizado de toda
  * la configuración global.
  * 
  * @author ActionPerformed
