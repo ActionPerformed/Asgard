@@ -1,0 +1,1087 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<mapa id="0">
+	<casilla i="0" j="0" transitable = "false">
+		<fondo>hierba</fondo>
+		<objeto>arbol</objeto>
+	</casilla>
+	<casilla i="0" j="1" transitable = "false">
+		<fondo>hierba</fondo>
+		<objeto>arbol</objeto>
+	</casilla>
+	<casilla i="0" j="2" transitable = "false">
+		<fondo>agua</fondo>
+		<objeto>borde_agua_iz</objeto>
+	</casilla>
+	<casilla i="0" j="3" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="0" j="4" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="0" j="5" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="0" j="6" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="0" j="7" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="0" j="8" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="0" j="9" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="0" j="10" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="0" j="11" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="0" j="12" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="0" j="13" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="0" j="14" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="0" j="15" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="0" j="16" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="0" j="17" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="0" j="18" transitable = "false">
+		<fondo>agua</fondo>
+		<objeto>borde_agua2_de</objeto>
+	</casilla>
+	<casilla i="0" j="19" transitable = "false">
+		<fondo>tierra</fondo>
+		<objeto>arbol</objeto>
+	</casilla>
+	<casilla i="1" j="0" transitable = "false">
+		<fondo>hierba</fondo>
+		<objeto>arbol</objeto>
+	</casilla>
+	<casilla i="1" j="1" transitable = "true">
+		<fondo>hierba</fondo>
+	</casilla>
+	<casilla i="1" j="2" transitable = "false">
+		<fondo>agua</fondo>
+		<objeto>borde_agua_iz</objeto>
+	</casilla>
+	<casilla i="1" j="3" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="1" j="4" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="1" j="5" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="1" j="6" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="1" j="7" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="1" j="8" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="1" j="9" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="1" j="10" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="1" j="11" transitable = "false">
+		<fondo>agua</fondo>
+		<objeto>borde_agua2_ar_iz_esq</objeto>
+	</casilla>
+	<casilla i="1" j="12" transitable = "false">
+		<fondo>agua</fondo>
+		<objeto>borde_agua2_ab</objeto>
+	</casilla>
+	<casilla i="1" j="13" transitable = "false">
+		<fondo>agua</fondo>
+		<objeto>borde_agua2_ab</objeto>
+	</casilla>
+	<casilla i="1" j="14" transitable = "false">
+		<fondo>agua</fondo>
+		<objeto>borde_agua2_ab</objeto>
+	</casilla>
+	<casilla i="1" j="15" transitable = "false">
+		<fondo>agua</fondo>
+		<objeto>borde_agua2_ab</objeto>
+	</casilla>
+	<casilla i="1" j="16" transitable = "false">
+		<fondo>agua</fondo>
+		<objeto>borde_agua2_ab</objeto>
+	</casilla>
+	<casilla i="1" j="17" transitable = "false">
+		<fondo>agua</fondo>
+		<objeto>borde_agua2_ab</objeto>
+	</casilla>
+	<casilla i="1" j="18" transitable = "false">
+		<fondo>agua</fondo>
+		<objeto>borde_agua2_ab_de</objeto>
+	</casilla>
+	<casilla i="1" j="19" transitable = "false">
+		<fondo>tierra</fondo>
+		<objeto>arbol</objeto>
+	</casilla>
+	<casilla i="2" j="0" transitable = "false">
+		<fondo>agua</fondo>
+		<objeto>borde_agua_ar</objeto>
+	</casilla>
+	<casilla i="2" j="1" transitable = "false">
+		<fondo>agua</fondo>
+		<objeto>borde_agua_ar</objeto>
+	</casilla>
+	<casilla i="2" j="2" transitable = "false">
+		<fondo>agua</fondo>
+		<objeto>borde_agua_ab_de_esq</objeto>
+	</casilla>
+	<casilla i="2" j="3" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="2" j="4" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="2" j="5" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="2" j="6" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="2" j="7" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="2" j="8" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="2" j="9" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="2" j="10" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="2" j="11" transitable = "false">
+		<fondo>agua</fondo>
+		<objeto>borde_agua2_de</objeto>
+	</casilla>
+	<casilla i="2" j="12" transitable = "true">
+		<fondo>tierra</fondo>
+	</casilla>
+	<casilla i="2" j="13" transitable = "false">
+		<fondo>tierra</fondo>
+		<objeto>borde_casa</objeto>
+	</casilla>
+	<casilla i="2" j="14" transitable = "false">
+		<fondo>tierra</fondo>
+		<objeto>resto_casa</objeto>
+	</casilla>
+	<casilla i="2" j="15" transitable = "false">
+		<fondo>tierra</fondo>
+		<objeto>resto_casa</objeto>
+	</casilla>
+	<casilla i="2" j="16" transitable = "false">
+		<fondo>tierra</fondo>
+		<objeto>resto_casa</objeto>
+	</casilla>
+	<casilla i="2" j="17" transitable = "false">
+		<fondo>tierra</fondo>
+		<objeto>npc_hombre</objeto>
+		<descripcion>npc103101</descripcion>
+	</casilla>
+	<casilla i="2" j="18" transitable = "true">
+		<fondo>tierra</fondo>
+	</casilla>
+	<casilla i="2" j="19" transitable = "true">
+		<fondo>tierra</fondo>
+		<puerta>
+			<mapa_destino>1032</mapa_destino>
+			<i_destino>2</i_destino>
+			<j_destino>1</j_destino>
+		</puerta>
+	</casilla>
+	<casilla i="3" j="0" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="3" j="1" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="3" j="2" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="3" j="3" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="3" j="4" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="3" j="5" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="3" j="6" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="3" j="7" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="3" j="8" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="3" j="9" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="3" j="10" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="3" j="11" transitable = "false">
+		<fondo>agua</fondo>
+		<objeto>borde_agua2_de</objeto>
+	</casilla>
+	<casilla i="3" j="12" transitable = "false">
+		<fondo>tierra</fondo>
+		<objeto>arbol</objeto>
+	</casilla>
+	<casilla i="3" j="13" transitable = "false">
+		<fondo>tierra</fondo>
+		<objeto>resto_casa</objeto>
+	</casilla>
+	<casilla i="3" j="14" transitable = "false">
+		<fondo>tierra</fondo>
+		<objeto>resto_casa</objeto>
+	</casilla>
+	<casilla i="3" j="15" transitable = "false">
+		<fondo>tierra</fondo>
+		<objeto>resto_casa</objeto>
+	</casilla>
+	<casilla i="3" j="16" transitable = "false">
+		<fondo>tierra</fondo>
+		<objeto>resto_casa</objeto>
+	</casilla>
+	<casilla i="3" j="17" transitable = "true">
+		<fondo>tierra</fondo>
+	</casilla>
+	<casilla i="3" j="18" transitable = "true">
+		<fondo>tierra</fondo>
+	</casilla>
+	<casilla i="3" j="19" transitable = "true">
+		<fondo>tierra</fondo>
+		<puerta>
+			<mapa_destino>1032</mapa_destino>
+			<i_destino>3</i_destino>
+			<j_destino>1</j_destino>
+		</puerta>
+	</casilla>
+	<casilla i="4" j="0" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="4" j="1" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="4" j="2" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="4" j="3" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="4" j="4" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="4" j="5" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="4" j="6" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="4" j="7" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="4" j="8" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="4" j="9" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="4" j="10" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="4" j="11" transitable = "false">
+		<fondo>agua</fondo>
+		<objeto>borde_agua2_de</objeto>
+	</casilla>
+	<casilla i="4" j="12" transitable = "true">
+		<fondo>tierra</fondo>
+	</casilla>
+	<casilla i="4" j="13" transitable = "false">
+		<fondo>tierra</fondo>
+		<objeto>resto_casa</objeto>
+		<descripcion>cartel_casa_9005</descripcion>
+	</casilla>
+	<casilla i="4" j="14" transitable = "false">
+		<fondo>tierra</fondo>
+		<objeto>resto_casa</objeto>
+	</casilla>
+	<casilla i="4" j="15" transitable = "false">
+		<fondo>tierra</fondo>
+		<objeto>resto_casa</objeto>
+	</casilla>
+	<casilla i="4" j="16" transitable = "false">
+		<fondo>tierra</fondo>
+		<objeto>resto_casa</objeto>
+	</casilla>
+	<casilla i="4" j="17" transitable = "true">
+		<fondo>tierra</fondo>
+	</casilla>
+	<casilla i="4" j="18" transitable = "true">
+		<fondo>tierra</fondo>
+	</casilla>
+	<casilla i="4" j="19" transitable = "true">
+		<fondo>tierra</fondo>
+		<puerta>
+			<mapa_destino>1032</mapa_destino>
+			<i_destino>4</i_destino>
+			<j_destino>1</j_destino>
+		</puerta>
+	</casilla>
+	<casilla i="5" j="0" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="5" j="1" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="5" j="2" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="5" j="3" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="5" j="4" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="5" j="5" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="5" j="6" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="5" j="7" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="5" j="8" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="5" j="9" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="5" j="10" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="5" j="11" transitable = "false">
+		<fondo>agua</fondo>
+		<objeto>borde_agua2_de</objeto>
+	</casilla>
+	<casilla i="5" j="12" transitable = "true">
+		<fondo>tierra</fondo>
+	</casilla>
+	<casilla i="5" j="13" transitable = "true">
+		<fondo>tierra</fondo>
+	</casilla>
+	<casilla i="5" j="14" transitable = "true">
+		<fondo>tierra</fondo>
+	</casilla>
+	<casilla i="5" j="15" transitable = "true">
+		<fondo>tierra</fondo>
+	</casilla>
+	<casilla i="5" j="16" transitable = "true">
+		<fondo>tierra</fondo>
+	</casilla>
+	<casilla i="5" j="17" transitable = "true">
+		<fondo>tierra</fondo>
+	</casilla>
+	<casilla i="5" j="18" transitable = "true">
+		<fondo>tierra</fondo>
+	</casilla>
+	<casilla i="5" j="19" transitable = "true">
+		<fondo>tierra</fondo>
+		<puerta>
+			<mapa_destino>1032</mapa_destino>
+			<i_destino>5</i_destino>
+			<j_destino>1</j_destino>
+		</puerta>
+	</casilla>
+	<casilla i="6" j="0" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="6" j="1" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="6" j="2" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="6" j="3" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="6" j="4" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="6" j="5" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="6" j="6" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="6" j="7" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="6" j="8" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="6" j="9" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="6" j="10" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="6" j="11" transitable = "false">
+		<fondo>agua</fondo>
+		<objeto>borde_agua2_ab_iz_esq</objeto>
+	</casilla>
+	<casilla i="6" j="12" transitable = "false">
+		<fondo>agua</fondo>
+		<objeto>borde_agua2_ar</objeto>
+	</casilla>
+	<casilla i="6" j="13" transitable = "false">
+		<fondo>agua</fondo>
+		<objeto>borde_agua2_ar</objeto>
+	</casilla>
+	<casilla i="6" j="14" transitable = "false">
+		<fondo>agua</fondo>
+		<objeto>borde_agua2_ar</objeto>
+	</casilla>
+	<casilla i="6" j="15" transitable = "false">
+		<fondo>agua</fondo>
+		<objeto>borde_agua2_ar</objeto>
+	</casilla>
+	<casilla i="6" j="16" transitable = "false">
+		<fondo>agua</fondo>
+		<objeto>borde_agua2_ar</objeto>
+	</casilla>
+	<casilla i="6" j="17" transitable = "false">
+		<fondo>agua</fondo>
+		<objeto>borde_agua2_ar_de</objeto>
+	</casilla>
+	<casilla i="6" j="18" transitable = "true">
+		<fondo>tierra</fondo>
+	</casilla>
+	<casilla i="6" j="19" transitable = "true">
+		<fondo>tierra</fondo>
+		<puerta>
+			<mapa_destino>1032</mapa_destino>
+			<i_destino>6</i_destino>
+			<j_destino>1</j_destino>
+		</puerta>
+	</casilla>
+	<casilla i="7" j="0" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="7" j="1" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="7" j="2" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="7" j="3" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="7" j="4" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="7" j="5" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="7" j="6" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="7" j="7" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="7" j="8" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="7" j="9" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="7" j="10" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="7" j="11" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="7" j="12" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="7" j="13" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="7" j="14" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="7" j="15" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="7" j="16" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="7" j="17" transitable = "false">
+		<fondo>agua</fondo>
+		<objeto>borde_agua2_de</objeto>
+	</casilla>
+	<casilla i="7" j="18" transitable = "true">
+		<fondo>tierra</fondo>
+	</casilla>
+	<casilla i="7" j="19" transitable = "true">
+		<fondo>tierra</fondo>
+		<puerta>
+			<mapa_destino>1032</mapa_destino>
+			<i_destino>7</i_destino>
+			<j_destino>1</j_destino>
+		</puerta>
+	</casilla>
+	<casilla i="8" j="0" transitable = "false">
+		<fondo>agua</fondo>
+		<objeto>borde_agua_ab</objeto>
+	</casilla>
+	<casilla i="8" j="1" transitable = "false">
+		<fondo>agua</fondo>
+		<objeto>borde_agua_ab</objeto>
+	</casilla>
+	<casilla i="8" j="2" transitable = "false">
+		<fondo>agua</fondo>
+		<objeto>borde_agua_ab</objeto>
+	</casilla>
+	<casilla i="8" j="3" transitable = "false">
+		<fondo>agua</fondo>
+		<objeto>borde_agua_ab</objeto>
+	</casilla>
+	<casilla i="8" j="4" transitable = "false">
+		<fondo>agua</fondo>
+		<objeto>borde_agua_ab</objeto>
+	</casilla>
+	<casilla i="8" j="5" transitable = "false">
+		<fondo>agua</fondo>
+		<objeto>borde_agua_ab</objeto>
+	</casilla>
+	<casilla i="8" j="6" transitable = "false">
+		<fondo>agua</fondo>
+		<objeto>borde_agua_ab</objeto>
+	</casilla>
+	<casilla i="8" j="7" transitable = "false">
+		<fondo>agua</fondo>
+		<objeto>borde_agua_ar_de_esq</objeto>
+	</casilla>
+	<casilla i="8" j="8" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="8" j="9" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="8" j="10" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="8" j="11" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="8" j="12" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="8" j="13" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="8" j="14" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="8" j="15" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="8" j="16" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="8" j="17" transitable = "false">
+		<fondo>agua</fondo>
+		<objeto>borde_agua2_de</objeto>
+	</casilla>
+	<casilla i="8" j="18" transitable = "true">
+		<fondo>tierra</fondo>
+	</casilla>
+	<casilla i="8" j="19" transitable = "true">
+		<fondo>tierra</fondo>
+		<puerta>
+			<mapa_destino>1032</mapa_destino>
+			<i_destino>8</i_destino>
+			<j_destino>1</j_destino>
+		</puerta>
+	</casilla>
+	<casilla i="9" j="0" transitable = "false">
+		<fondo>hierba</fondo>
+		<objeto>arbol</objeto>
+	</casilla>
+	<casilla i="9" j="1" transitable = "true">
+		<fondo>hierba</fondo>
+	</casilla>
+	<casilla i="9" j="2" transitable = "false">
+		<fondo>hierba</fondo>
+		<objeto>borde_casa</objeto>
+	</casilla>
+	<casilla i="9" j="3" transitable = "false">
+		<fondo>hierba</fondo>
+		<objeto>resto_casa</objeto>
+	</casilla>
+	<casilla i="9" j="4" transitable = "false">
+		<fondo>hierba</fondo>
+		<objeto>resto_casa</objeto>
+	</casilla>
+	<casilla i="9" j="5" transitable = "false">
+		<fondo>hierba</fondo>
+		<objeto>resto_casa</objeto>
+	</casilla>
+	<casilla i="9" j="6" transitable = "false">
+		<fondo>hierba</fondo>
+		<objeto>arbol</objeto>
+	</casilla>
+	<casilla i="9" j="7" transitable = "false">
+		<fondo>agua</fondo>
+		<objeto>borde_agua_iz</objeto>
+	</casilla>
+	<casilla i="9" j="8" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="9" j="9" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="9" j="10" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="9" j="11" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="9" j="12" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="9" j="13" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="9" j="14" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="9" j="15" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="9" j="16" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="9" j="17" transitable = "false">
+		<fondo>agua</fondo>
+		<objeto>borde_agua2_de</objeto>
+	</casilla>
+	<casilla i="9" j="18" transitable = "true">
+		<fondo>tierra</fondo>
+	</casilla>
+	<casilla i="9" j="19" transitable = "true">
+		<fondo>tierra</fondo>
+		<puerta>
+			<mapa_destino>1032</mapa_destino>
+			<i_destino>9</i_destino>
+			<j_destino>1</j_destino>
+		</puerta>
+	</casilla>
+	<casilla i="10" j="0" transitable = "true">
+		<fondo>hierba</fondo>
+		<puerta>
+			<mapa_destino>1030</mapa_destino>
+			<i_destino>10</i_destino>
+			<j_destino>18</j_destino>
+		</puerta>
+	</casilla>
+	<casilla i="10" j="1" transitable = "true">
+		<fondo>hierba</fondo>
+	</casilla>
+	<casilla i="10" j="2" transitable = "false">
+		<fondo>hierba</fondo>
+		<objeto>resto_casa</objeto>
+	</casilla>
+	<casilla i="10" j="3" transitable = "false">
+		<fondo>hierba</fondo>
+		<objeto>resto_casa</objeto>
+	</casilla>
+	<casilla i="10" j="4" transitable = "false">
+		<fondo>hierba</fondo>
+		<objeto>resto_casa</objeto>
+	</casilla>
+	<casilla i="10" j="5" transitable = "false">
+		<fondo>hierba</fondo>
+		<objeto>resto_casa</objeto>
+	</casilla>
+	<casilla i="10" j="6" transitable = "true">
+		<fondo>hierba</fondo>
+	</casilla>
+	<casilla i="10" j="7" transitable = "false">
+		<fondo>agua</fondo>
+		<objeto>borde_agua_iz</objeto>
+	</casilla>
+	<casilla i="10" j="8" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="10" j="9" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="10" j="10" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="10" j="11" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="10" j="12" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="10" j="13" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="10" j="14" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="10" j="15" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="10" j="16" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="10" j="17" transitable = "false">
+		<fondo>agua</fondo>
+		<objeto>borde_agua2_de</objeto>
+	</casilla>
+	<casilla i="10" j="18" transitable = "true">
+		<fondo>tierra</fondo>
+	</casilla>
+	<casilla i="10" j="19" transitable = "true">
+		<fondo>tierra</fondo>
+		<puerta>
+			<mapa_destino>1032</mapa_destino>
+			<i_destino>10</i_destino>
+			<j_destino>1</j_destino>
+		</puerta>
+	</casilla>
+	<casilla i="11" j="0" transitable = "true">
+		<fondo>hierba</fondo>
+		<puerta>
+			<mapa_destino>1030</mapa_destino>
+			<i_destino>11</i_destino>
+			<j_destino>18</j_destino>
+		</puerta>
+	</casilla>
+	<casilla i="11" j="1" transitable = "true">
+		<fondo>hierba</fondo>
+	</casilla>
+	<casilla i="11" j="2" transitable = "false">
+		<fondo>hierba</fondo>
+		<objeto>resto_casa</objeto>
+	</casilla>
+	<casilla i="11" j="3" transitable = "false">
+		<fondo>hierba</fondo>
+		<objeto>resto_casa</objeto>
+	</casilla>
+	<casilla i="11" j="4" transitable = "false">
+		<fondo>hierba</fondo>
+		<objeto>resto_casa</objeto>
+	</casilla>
+	<casilla i="11" j="5" transitable = "false">
+		<fondo>hierba</fondo>
+		<objeto>resto_casa</objeto>
+	</casilla>
+	<casilla i="11" j="6" transitable = "true">
+		<fondo>hierba</fondo>
+	</casilla>
+	<casilla i="11" j="7" transitable = "false">
+		<fondo>agua</fondo>
+		<objeto>borde_agua_iz</objeto>
+	</casilla>
+	<casilla i="11" j="8" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="11" j="9" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="11" j="10" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="11" j="11" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="11" j="12" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="11" j="13" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="11" j="14" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="11" j="15" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="11" j="16" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="11" j="17" transitable = "false">
+		<fondo>agua</fondo>
+		<objeto>borde_agua_de</objeto>
+	</casilla>
+	<casilla i="11" j="18" transitable = "true">
+		<fondo>hierba</fondo>
+		<objeto>borde_agua2_ar</objeto>
+	</casilla>
+	<casilla i="11" j="19" transitable = "true">
+		<fondo>hierba</fondo>
+		<objeto>borde_agua2_ar</objeto>
+		<puerta>
+			<mapa_destino>1032</mapa_destino>
+			<i_destino>11</i_destino>
+			<j_destino>1</j_destino>
+		</puerta>
+	</casilla>
+	<casilla i="12" j="0" transitable = "true">
+		<fondo>hierba</fondo>
+		<puerta>
+			<mapa_destino>1030</mapa_destino>
+			<i_destino>12</i_destino>
+			<j_destino>18</j_destino>
+		</puerta>
+	</casilla>
+	<casilla i="12" j="1" transitable = "true">
+		<fondo>hierba</fondo>
+	</casilla>
+	<casilla i="12" j="2" transitable = "true">
+		<fondo>hierba</fondo>
+	</casilla>
+	<casilla i="12" j="3" transitable = "true">
+		<fondo>hierba</fondo>
+	</casilla>
+	<casilla i="12" j="4" transitable = "true">
+		<fondo>hierba</fondo>
+	</casilla>
+	<casilla i="12" j="5" transitable = "false">
+		<fondo>hierba</fondo>
+		<objeto>arbol</objeto>
+	</casilla>
+	<casilla i="12" j="6" transitable = "true">
+		<fondo>hierba</fondo>
+	</casilla>
+	<casilla i="12" j="7" transitable = "false">
+		<fondo>agua</fondo>
+		<objeto>borde_agua_iz</objeto>
+	</casilla>
+	<casilla i="12" j="8" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="12" j="9" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="12" j="10" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="12" j="11" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="12" j="12" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="12" j="13" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="12" j="14" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="12" j="15" transitable = "false">
+		<fondo>agua</fondo>
+		<objeto>borde_agua_ar_iz_esq</objeto>
+	</casilla>
+	<casilla i="12" j="16" transitable = "false">
+		<fondo>agua</fondo>
+		<objeto>borde_agua_ab</objeto>
+	</casilla>
+	<casilla i="12" j="17" transitable = "false">
+		<fondo>agua</fondo>
+		<objeto>borde_agua_ab_de</objeto>
+	</casilla>
+	<casilla i="12" j="18" transitable = "true">
+		<fondo>hierba</fondo>
+	</casilla>
+	<casilla i="12" j="19" transitable = "true">
+		<fondo>hierba</fondo>
+		<puerta>
+			<mapa_destino>1032</mapa_destino>
+			<i_destino>12</i_destino>
+			<j_destino>1</j_destino>
+		</puerta>
+	</casilla>
+	<casilla i="13" j="0" transitable = "false">
+		<fondo>agua</fondo>
+		<objeto>borde_agua_ar</objeto>
+	</casilla>
+	<casilla i="13" j="1" transitable = "false">
+		<fondo>agua</fondo>
+		<objeto>borde_agua_ar</objeto>
+	</casilla>
+	<casilla i="13" j="2" transitable = "false">
+		<fondo>agua</fondo>
+		<objeto>borde_agua_ar</objeto>
+	</casilla>
+	<casilla i="13" j="3" transitable = "false">
+		<fondo>agua</fondo>
+		<objeto>borde_agua_ar</objeto>
+	</casilla>
+	<casilla i="13" j="4" transitable = "false">
+		<fondo>agua</fondo>
+		<objeto>borde_agua_ar</objeto>
+	</casilla>
+	<casilla i="13" j="5" transitable = "false">
+		<fondo>agua</fondo>
+		<objeto>borde_agua_ar</objeto>
+	</casilla>
+	<casilla i="13" j="6" transitable = "false">
+		<fondo>agua</fondo>
+		<objeto>borde_agua_ar</objeto>
+	</casilla>
+	<casilla i="13" j="7" transitable = "false">
+		<fondo>agua</fondo>
+		<objeto>borde_agua_ab_de_esq</objeto>
+	</casilla>
+	<casilla i="13" j="8" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="13" j="9" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="13" j="10" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="13" j="11" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="13" j="12" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="13" j="13" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="13" j="14" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="13" j="15" transitable = "false">
+		<fondo>agua</fondo>
+		<objeto>borde_agua_de</objeto>
+	</casilla>
+	<casilla i="13" j="16" transitable = "true">
+		<fondo>hierba</fondo>
+	</casilla>
+	<casilla i="13" j="17" transitable = "true">
+		<fondo>hierba</fondo>
+	</casilla>
+	<casilla i="13" j="18" transitable = "true">
+		<fondo>hierba</fondo>
+	</casilla>
+	<casilla i="13" j="19" transitable = "true">
+		<fondo>hierba</fondo>
+		<puerta>
+			<mapa_destino>1032</mapa_destino>
+			<i_destino>13</i_destino>
+			<j_destino>1</j_destino>
+		</puerta>
+	</casilla>
+	<casilla i="14" j="0" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="14" j="1" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="14" j="2" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="14" j="3" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="14" j="4" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="14" j="5" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="14" j="6" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="14" j="7" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="14" j="8" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="14" j="9" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="14" j="10" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="14" j="11" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="14" j="12" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="14" j="13" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="14" j="14" transitable = "false">
+		<fondo>agua</fondo>
+	</casilla>
+	<casilla i="14" j="15" transitable = "false">
+		<fondo>agua</fondo>
+		<objeto>borde_agua_de</objeto>
+	</casilla>
+	<casilla i="14" j="16" transitable = "true">
+		<fondo>hierba</fondo>
+		<puerta>
+			<mapa_destino>1041</mapa_destino>
+			<i_destino>1</i_destino>
+			<j_destino>16</j_destino>
+		</puerta>
+	</casilla>
+	<casilla i="14" j="17" transitable = "true">
+		<fondo>hierba</fondo>
+		<puerta>
+			<mapa_destino>1041</mapa_destino>
+			<i_destino>1</i_destino>
+			<j_destino>17</j_destino>
+		</puerta>
+	</casilla>
+	<casilla i="14" j="18" transitable = "true">
+		<fondo>hierba</fondo>
+		<puerta>
+			<mapa_destino>1041</mapa_destino>
+			<i_destino>1</i_destino>
+			<j_destino>18</j_destino>
+		</puerta>
+	</casilla>
+	<casilla i="14" j="19" transitable = "false">
+		<fondo>hierba</fondo>
+		<objeto>arbol</objeto>
+	</casilla>
+</mapa>
