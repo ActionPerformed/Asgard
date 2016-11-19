@@ -93,25 +93,13 @@ public final class DialogoMenu extends javax.swing.JDialog {
         });
 
         btVolver.setText("Volver al Juego");
-        btVolver.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btVolverActionPerformed(evt);
-            }
-        });
+        btVolver.addActionListener(e -> btVolverActionPerformed());
 
         btOpciones.setText("Opciones");
-        btOpciones.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btOpcionesActionPerformed(evt);
-            }
-        });
+        btOpciones.addActionListener(e -> btOpcionesActionPerformed());
 
         btSalir.setText("Salir");
-        btSalir.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btSalirActionPerformed(evt);
-            }
-        });
+        btSalir.addActionListener(e -> System.exit(0));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -149,18 +137,11 @@ public final class DialogoMenu extends javax.swing.JDialog {
      * Cierra el diálogo y retorna al juego
      * @param evt 
      */
-    private void btVolverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btVolverActionPerformed
+    private void btVolverActionPerformed() {//GEN-FIRST:event_btVolverActionPerformed
         panelJuego.getPersonaje().setHayDialogo(false);
         this.dispose();
     }//GEN-LAST:event_btVolverActionPerformed
 
-    /**
-     * Sale del juego
-     * @param evt 
-     */
-    private void btSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btSalirActionPerformed
-        System.exit(0);
-    }//GEN-LAST:event_btSalirActionPerformed
 
     /**
      * Cierra el diálogo y retorna al juego, si se pulsa la tecla ESC
@@ -178,7 +159,7 @@ public final class DialogoMenu extends javax.swing.JDialog {
      * con opciones de idioma.
      * @param evt 
      */
-    private void btOpcionesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btOpcionesActionPerformed
+    private void btOpcionesActionPerformed() {//GEN-FIRST:event_btOpcionesActionPerformed
         DialogoOpciones dialogoOpciones = new DialogoOpciones(main,false);
         dialogoOpciones.setDialogoMenu(this);
         dialogoOpciones.setLocationRelativeTo(panelJuego);

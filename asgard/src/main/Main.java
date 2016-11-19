@@ -1,10 +1,12 @@
 package main;
 
-import configuracion.Parametros;
 import java.util.Locale;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+
 import javax.swing.JFrame;
+
+import configuracion.Parametros;
 
 /**
  * Clase principal del juego. Se trata de un <code>JFrame</code> sobre el que se declarará, 
@@ -80,29 +82,17 @@ public final class Main extends javax.swing.JFrame {
 
         jMenuItem1.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_E, java.awt.event.InputEvent.CTRL_MASK));
         jMenuItem1.setText("Editor de mapas...");
-        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem1ActionPerformed(evt);
-            }
-        });
+        jMenuItem1.addActionListener(e -> jMenuItem1ActionPerformed(e));
         jMenu1.add(jMenuItem1);
 
         menuItOpciones.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_ESCAPE, 0));
         menuItOpciones.setText("Opciones");
-        menuItOpciones.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                menuItOpcionesActionPerformed(evt);
-            }
-        });
+        menuItOpciones.addActionListener(e -> menuItOpcionesActionPerformed(e));
         jMenu1.add(menuItOpciones);
 
         jMenuItem2.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F4, java.awt.event.InputEvent.ALT_MASK));
         jMenuItem2.setText("Salir");
-        jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem2ActionPerformed(evt);
-            }
-        });
+        jMenuItem2.addActionListener(e -> jMenuItem2ActionPerformed(e));
         jMenu1.add(jMenuItem2);
 
         jMenuBar1.add(jMenu1);

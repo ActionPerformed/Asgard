@@ -1,8 +1,9 @@
 package main;
 
-import configuracion.Parametros;
 import javax.swing.JButton;
 import javax.swing.JLabel;
+
+import configuracion.Parametros;
 
 /**
  * Contenedor <code>JPanel</code> que se mostrará al inicio del juego, a modo
@@ -47,12 +48,7 @@ public final class PanelPresentacion extends javax.swing.JPanel {
         
         botonJuego.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
         botonJuego.setText("Entrar a Asgard (1.0)");
-        botonJuego.addActionListener(new java.awt.event.ActionListener() {
-            @Override
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                botonJuegoActionPerformed(evt);
-            }
-        });
+        botonJuego.addActionListener(e -> botonJuegoActionPerformed(e));
         
         //lanzo el hilo musical
         this.musica.getHiloMusica().start();

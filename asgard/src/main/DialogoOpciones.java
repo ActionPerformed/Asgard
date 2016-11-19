@@ -114,18 +114,10 @@ public final class DialogoOpciones extends javax.swing.JDialog {
         );
 
         btVolver.setText("Volver");
-        btVolver.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btVolverActionPerformed(evt);
-            }
-        });
+        btVolver.addActionListener(e -> btVolverActionPerformed(e));
 
         btGuardar.setText("Guardar");
-        btGuardar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btGuardarActionPerformed(evt);
-            }
-        });
+        btGuardar.addActionListener(e -> btGuardarActionPerformed(e));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
