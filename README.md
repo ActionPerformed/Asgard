@@ -2,7 +2,7 @@
 
 Asgard was part of my final project when I was studying. It is a simple game in JSwing/Android that allows the player to move freely in some previous maps that can be created with the editor tool. In Asgard you can interact with some items or NPCs and you can use your mobile device as a fishin rod for fishing in water zones
 
-It is compound by 3 modules:
+It is compound of 3 modules:
 
 - Asgard (Java): The game itself.
 - Eitr (Java): The map editor.
