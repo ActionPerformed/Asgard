@@ -2,6 +2,8 @@ package main;
 
 import configuracion.Parametros;
 import configuracion.Tileset;
+import utils.Constant;
+
 import java.awt.Point;
 import java.awt.event.KeyEvent;
 import java.util.Calendar;
@@ -119,19 +121,19 @@ public final class Personaje extends JLabel implements Runnable{
         switch( keyCode ) { 
             case KeyEvent.VK_RIGHT:
                 movDerecha=false;
-                ultimoMovimiento = "DERECHA";
+                ultimoMovimiento = Constant.DERECHA;
                 break;
             case KeyEvent.VK_LEFT:
                 movIzquierda=false;
-                ultimoMovimiento = "IZQUIERDA";
+                ultimoMovimiento = Constant.IZQUIERDA;
                 break;
             case KeyEvent.VK_UP:
                 movArriba=false;
-                ultimoMovimiento = "ARRIBA";
+                ultimoMovimiento = Constant.ARRIBA;
                 break;
             case KeyEvent.VK_DOWN:
                 movAbajo=false;
-                ultimoMovimiento = "ABAJO";
+                ultimoMovimiento = Constant.ABAJO;
                 break;
          }
     }
@@ -217,7 +219,7 @@ public final class Personaje extends JLabel implements Runnable{
         int coordI=((int)posY+32)/32;
         int coordJ=((int)posX+16)/32;
         switch (ultimoMovimiento){ //Aqui a veces salta exception de forma aleatoria
-            case "ARRIBA":
+            case Constant.ARRIBA:
                 if (!pantallaJuego.getCasillaMapa()[coordI-1][coordJ].getDescripcion().equals("")) {
                     hayDialogo = true;
                     this.caracterInicial += PanelJuego.getPanelDialogo().escribeDialogo(caracterInicial, pantallaJuego.getCasillaMapa()[coordI-1][coordJ].getDescripcion());
@@ -233,7 +235,7 @@ public final class Personaje extends JLabel implements Runnable{
                     new Emisor("Agua");
                 }
                 break;
-            case "ABAJO":
+            case Constant.ABAJO:
                 if (!pantallaJuego.getCasillaMapa()[coordI+1][coordJ].getDescripcion().equals("")) {
                     hayDialogo = true;
                     this.caracterInicial += PanelJuego.getPanelDialogo().escribeDialogo(caracterInicial, pantallaJuego.getCasillaMapa()[coordI+1][coordJ].getDescripcion());
@@ -249,7 +251,7 @@ public final class Personaje extends JLabel implements Runnable{
                     new Emisor("Agua");
                 }
                 break;
-            case "DERECHA":
+            case Constant.DERECHA:
                 if (!pantallaJuego.getCasillaMapa()[coordI][coordJ+1].getDescripcion().equals("")) {
                     hayDialogo = true;
                     this.caracterInicial += PanelJuego.getPanelDialogo().escribeDialogo(caracterInicial, pantallaJuego.getCasillaMapa()[coordI][coordJ+1].getDescripcion());
@@ -265,7 +267,7 @@ public final class Personaje extends JLabel implements Runnable{
                     new Emisor("Agua");
                 }
                 break;
-            case "IZQUIERDA":
+            case Constant.IZQUIERDA:
                 if (!pantallaJuego.getCasillaMapa()[coordI][coordJ-1].getDescripcion().equals("")) {
                     hayDialogo = true;
                     this.caracterInicial += PanelJuego.getPanelDialogo().escribeDialogo(caracterInicial, pantallaJuego.getCasillaMapa()[coordI][coordJ-1].getDescripcion());
@@ -413,10 +415,10 @@ public final class Personaje extends JLabel implements Runnable{
      * por el personaje
      * @return
      * <ul>
-     *  <li><code>ARRIBA</code>: Si el último movimiento ha sido hacia arriba</li>
-     *  <li><code>ABAJO</code>: Si el último movimiento ha sido hacia abajo</li>
-     *  <li><code>IZQUIERDA</code>: Si el último movimiento ha sido hacia la izquierda</li>
-     *  <li><code>DERECHA</code>: Si el último movimiento ha sido hacia la derecha</li>
+     *  <li><code>Constant.ARRIBA</code>: Si el último movimiento ha sido hacia arriba</li>
+     *  <li><code>Constant.ABAJO</code>: Si el último movimiento ha sido hacia abajo</li>
+     *  <li><code>Constant.IZQUIERDA</code>: Si el último movimiento ha sido hacia la izquierda</li>
+     *  <li><code>Constant.DERECHA</code>: Si el último movimiento ha sido hacia la derecha</li>
      * </ul>
      */
     public String getUltimoMovimiento() {

@@ -10,13 +10,17 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+
 import javax.swing.JOptionPane;
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;
+
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
+
+import utils.Constant;
 
 /**
  * Clase con los métodos auxiliares usados por el editor
@@ -327,61 +331,61 @@ public class LibsEditor {
             }
             if (isFondo()) {
                 switch (data){
-                    case "hierba":
+                    case Constant.HIERBA:
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getFondo().setIcon(configuracion.Tileset.getInstance().getHIERBA());
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getFondo().setCod(data);
                         break;
-                    case "agua":
+                    case Constant.AGUA:
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getFondo().setIcon(configuracion.Tileset.getInstance().getAGUA());
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getFondo().setCod(data);
                         break;
-                    case "tarima":
+                    case Constant.TARIMA:
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getFondo().setIcon(configuracion.Tileset.getInstance().getTARIMA());
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getFondo().setCod(data);
                         break;
-                    case "blank":
+                    case Constant.BLANK:
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getFondo().setIcon(configuracion.Tileset.getInstance().getBLANK());
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getFondo().setCod(data);
                         break;
-                    case "tierra":
+                    case Constant.TIERRA:
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getFondo().setIcon(configuracion.Tileset.getInstance().getTIERRA());
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getFondo().setCod(data);
                         break;
                     //ALFOMBRA    
-                    case "alfombra_ab":
+                    case Constant.ALFOMBRA_AB:
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getFondo().setIcon(configuracion.Tileset.getInstance().getALFOMBRA_AB());
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getFondo().setCod(data);
                         break;
-                    case "alfombra_ar":
+                    case Constant.ALFOMBRA_AR:
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getFondo().setIcon(configuracion.Tileset.getInstance().getALFOMBRA_AR());
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getFondo().setCod(data);
                         break;
-                    case "alfombra_de":
+                    case Constant.ALFOMBRA_DE:
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getFondo().setIcon(configuracion.Tileset.getInstance().getALFOMBRA_DE());
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getFondo().setCod(data);
                         break;
-                    case "alfombra_iz":
+                    case Constant.ALFOMBRA_IZ:
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getFondo().setIcon(configuracion.Tileset.getInstance().getALFOMBRA_IZ());
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getFondo().setCod(data);
                         break;
-                    case "alfombra_ab_de":
+                    case Constant.ALFOMBRA_AB_DE:
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getFondo().setIcon(configuracion.Tileset.getInstance().getALFOMBRA_AB_DE());
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getFondo().setCod(data);
                         break;
-                    case "alfombra_ab_iz":
+                    case Constant.ALFOMBRA_AB_IZ:
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getFondo().setIcon(configuracion.Tileset.getInstance().getALFOMBRA_AB_IZ());
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getFondo().setCod(data);
                         break;
-                    case "alfombra_ar_de":
+                    case Constant.ALFOMBRA_AR_DE:
                         //getMapaCasillas()[getIndice_i()][getIndice_j()].getFondo().setCod(data);
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getFondo().setIcon(configuracion.Tileset.getInstance().getALFOMBRA_AR_DE());
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getFondo().setCod(data);
                         break;
-                    case "alfombra_ar_iz":
+                    case Constant.ALFOMBRA_AR_IZ:
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getFondo().setIcon(configuracion.Tileset.getInstance().getALFOMBRA_AR_IZ());
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getFondo().setCod(data);
                         break;
-                    case "alfombra_centro":
+                    case Constant.ALFOMBRA_CENTRO:
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getFondo().setIcon(configuracion.Tileset.getInstance().getALFOMBRA_CENTRO());
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getFondo().setCod(data);
                         break;
@@ -391,199 +395,199 @@ public class LibsEditor {
             }else if (isObjeto()) {
                 switch (data){
                     //NPCs
-                    case "npc_hombre":
+                    case Constant.NPC_HOMBRE:
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setIcon(configuracion.Tileset.getInstance().getNPC_HOMBRE());
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setCod(data);
                         break;
-                    case "npc_mujer":
+                    case Constant.NPC_MUJER:
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setIcon(configuracion.Tileset.getInstance().getNPC_MUJER());
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setCod(data);
                         break;
                     //ELEMENTOS DE CORNISA
-                    case "borde_tierra_ab":
+                    case Constant.BORDE_TIERRA_AB:
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setIcon(configuracion.Tileset.getInstance().getBORDE_TIERRA_AB());
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setCod(data);
                         break;
-                    case "borde_tierra_ar":
+                    case Constant.BORDE_TIERRA_AR:
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setIcon(configuracion.Tileset.getInstance().getBORDE_TIERRA_AR());
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setCod(data);
                         break;
-                    case "borde_tierra_de":
+                    case Constant.BORDE_TIERRA_DE:
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setIcon(configuracion.Tileset.getInstance().getBORDE_TIERRA_DE());
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setCod(data);
                         break;
-                    case "borde_tierra_iz":
+                    case Constant.BORDE_TIERRA_IZ:
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setIcon(configuracion.Tileset.getInstance().getBORDE_TIERRA_IZ());
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setCod(data);
                         break;
-                    case "borde_tierra_ab_de":
+                    case Constant.BORDE_TIERRA_AB_DE:
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setIcon(configuracion.Tileset.getInstance().getBORDE_TIERRA_AB_DE());
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setCod(data);
                         break;
-                    case "borde_tierra_ab_iz":
+                    case Constant.BORDE_TIERRA_AB_IZ:
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setIcon(configuracion.Tileset.getInstance().getBORDE_TIERRA_AB_IZ());
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setCod(data);
                         break;
-                    case "borde_tierra_ar_de":
+                    case Constant.BORDE_TIERRA_AR_DE:
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setIcon(configuracion.Tileset.getInstance().getBORDE_TIERRA_AR_DE());
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setCod(data);
                         break;
-                    case "borde_tierra_ar_iz":
+                    case Constant.BORDE_TIERRA_AR_IZ:
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setIcon(configuracion.Tileset.getInstance().getBORDE_TIERRA_AR_IZ());
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setCod(data);
                         break;
-                    case "tierra_ab_de_esquina":
+                    case Constant.TIERRA_AB_DE_ESQUINA:
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setIcon(configuracion.Tileset.getInstance().getBORDE_TIERRA_AB_DE_ESQUINA());
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setCod(data);
                         break;
-                    case "tierra_ab_iz_esquina":
+                    case Constant.TIERRA_AB_IZ_ESQUINA:
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setIcon(configuracion.Tileset.getInstance().getBORDE_TIERRA_AB_IZ_ESQUINA());
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setCod(data);
                         break;
-                    case "tierra_ar_de_esquina":
+                    case Constant.TIERRA_AR_DE_ESQUINA:
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setIcon(configuracion.Tileset.getInstance().getBORDE_TIERRA_AR_DE_ESQUINA());
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setCod(data);
                         break;
-                    case "tierra_ar_iz_esquina":
+                    case Constant.TIERRA_AR_IZ_ESQUINA:
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setIcon(configuracion.Tileset.getInstance().getBORDE_TIERRA_AR_IZ_ESQUINA());
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setCod(data);
                         break;
                     //BORDE HIERBA    
-                    case "borde_agua_ab":
+                    case Constant.BORDE_AGUA_AB:
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setIcon(configuracion.Tileset.getInstance().getBORDE_AGUA_AB());
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setCod(data);
                         break;
-                    case "borde_agua_ar":
+                    case Constant.BORDE_AGUA_AR:
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setIcon(configuracion.Tileset.getInstance().getBORDE_AGUA_AR());
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setCod(data);
                         break;
-                    case "borde_agua_de":
+                    case Constant.BORDE_AGUA_DE:
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setIcon(configuracion.Tileset.getInstance().getBORDE_AGUA_DE());
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setCod(data);
                         break;
-                    case "borde_agua_iz":
+                    case Constant.BORDE_AGUA_IZ:
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setIcon(configuracion.Tileset.getInstance().getBORDE_AGUA_IZ());
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setCod(data);
                         break;
-                    case "borde_agua_ab_de":
+                    case Constant.BORDE_AGUA_AB_DE:
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setIcon(configuracion.Tileset.getInstance().getBORDE_AGUA_AB_DE());
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setCod(data);
                         break;
-                    case "borde_agua_ab_iz":
+                    case Constant.BORDE_AGUA_AB_IZ:
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setIcon(configuracion.Tileset.getInstance().getBORDE_AGUA_AB_IZ());
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setCod(data);
                         break;
-                    case "borde_agua_ar_de":
+                    case Constant.BORDE_AGUA_AR_DE:
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setCod(data);
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setIcon(configuracion.Tileset.getInstance().getBORDE_AGUA_AR_DE());
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setCod(data);
                         break;
-                    case "borde_agua_ar_iz":
+                    case Constant.BORDE_AGUA_AR_IZ:
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setIcon(configuracion.Tileset.getInstance().getBORDE_AGUA_AR_IZ());
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setCod(data);
                         break;
-                    case "borde_agua_ab_de_esq":
+                    case Constant.BORDE_AGUA_AB_DE_ESQ:
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setIcon(configuracion.Tileset.getInstance().getBORDE_AGUA_AB_DE_ESQUINA());
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setCod(data);
                         break;
-                    case "borde_agua_ab_iz_esq":
+                    case Constant.BORDE_AGUA_AB_IZ_ESQ:
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setIcon(configuracion.Tileset.getInstance().getBORDE_AGUA_AB_IZ_ESQUINA());
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setCod(data);
                         break;
-                    case "borde_agua_ar_de_esq":
+                    case Constant.BORDE_AGUA_AR_DE_ESQ:
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setIcon(configuracion.Tileset.getInstance().getBORDE_AGUA_AR_DE_ESQUINA());
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setCod(data);
                         break;
-                    case "borde_agua_ar_iz_esq":
+                    case Constant.BORDE_AGUA_AR_IZ_ESQ:
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setIcon(configuracion.Tileset.getInstance().getBORDE_AGUA_AR_IZ_ESQUINA());
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setCod(data);
                         break;
                     //BORDE HIERBA    
-                    case "borde_agua2_ab":
+                    case Constant.BORDE_AGUA2_AB:
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setIcon(configuracion.Tileset.getInstance().getBORDE_AGUA2_AB());
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setCod(data);
                         break;
-                    case "borde_agua2_ar":
+                    case Constant.BORDE_AGUA2_AR:
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setIcon(configuracion.Tileset.getInstance().getBORDE_AGUA2_AR());
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setCod(data);
                         break;
-                    case "borde_agua2_de":
+                    case Constant.BORDE_AGUA2_DE:
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setIcon(configuracion.Tileset.getInstance().getBORDE_AGUA2_DE());
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setCod(data);
                         break;
-                    case "borde_agua2_iz":
+                    case Constant.BORDE_AGUA2_IZ:
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setIcon(configuracion.Tileset.getInstance().getBORDE_AGUA2_IZ());
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setCod(data);
                         break;
-                    case "borde_agua2_ab_de":
+                    case Constant.BORDE_AGUA2_AB_DE:
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setIcon(configuracion.Tileset.getInstance().getBORDE_AGUA2_AB_DE());
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setCod(data);
                         break;
-                    case "borde_agua2_ab_iz":
+                    case Constant.BORDE_AGUA2_AB_IZ:
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setIcon(configuracion.Tileset.getInstance().getBORDE_AGUA2_AB_IZ());
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setCod(data);
                         break;
-                    case "borde_agua2_ar_de":
+                    case Constant.BORDE_AGUA2_AR_DE:
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setCod(data);
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setIcon(configuracion.Tileset.getInstance().getBORDE_AGUA2_AR_DE());
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setCod(data);
                         break;
-                    case "borde_agua2_ar_iz":
+                    case Constant.BORDE_AGUA2_AR_IZ:
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setIcon(configuracion.Tileset.getInstance().getBORDE_AGUA2_AR_IZ());
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setCod(data);
                         break;
-                    case "borde_agua2_ab_de_esq":
+                    case Constant.BORDE_AGUA2_AB_DE_ESQ:
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setIcon(configuracion.Tileset.getInstance().getBORDE_AGUA2_AB_DE_ESQUINA());
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setCod(data);
                         break;
-                    case "borde_agua2_ab_iz_esq":
+                    case Constant.BORDE_AGUA2_AB_IZ_ESQ:
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setIcon(configuracion.Tileset.getInstance().getBORDE_AGUA2_AB_IZ_ESQUINA());
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setCod(data);
                         break;
-                    case "borde_agua2_ar_de_esq":
+                    case Constant.BORDE_AGUA2_AR_DE_ESQ:
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setIcon(configuracion.Tileset.getInstance().getBORDE_AGUA2_AR_DE_ESQUINA());
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setCod(data);
                         break;
-                    case "borde_agua2_ar_iz_esq":
+                    case Constant.BORDE_AGUA2_AR_IZ_ESQ:
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setIcon(configuracion.Tileset.getInstance().getBORDE_AGUA2_AR_IZ_ESQUINA());
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setCod(data);
                         break;
                     //RAMPAS    
-                    case "rampa_ar":
+                    case Constant.RAMPA_AR:
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setIcon(configuracion.Tileset.getInstance().getRAMPA_AR());
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setCod(data);
                         break;
-                    case "rampa_ab":
+                    case Constant.RAMPA_AB:
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setIcon(configuracion.Tileset.getInstance().getRAMPA_AB());
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setCod(data);
                         break;
-                    case "rampa_de":
+                    case Constant.RAMPA_DE:
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setIcon(configuracion.Tileset.getInstance().getRAMPA_DE());
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setCod(data);
                         break;
-                    case "rampa_iz":
+                    case Constant.RAMPA_IZ:
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setIcon(configuracion.Tileset.getInstance().getRAMPA_IZ());
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setCod(data);
                         break;    
                     //SILLAS    
-                    case "silla_ar":
+                    case Constant.SILLA_AR:
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setIcon(configuracion.Tileset.getInstance().getSILLA_AR());
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setCod(data);
                         break;
-                    case "silla_ab":
+                    case Constant.SILLA_AB:
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setIcon(configuracion.Tileset.getInstance().getSILLA_AB());
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setCod(data);
                         break;
-                    case "silla_de":
+                    case Constant.SILLA_DE:
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setIcon(configuracion.Tileset.getInstance().getSILLA_DE());
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setCod(data);
                         break;
-                    case "silla_iz":
+                    case Constant.SILLA_IZ:
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setIcon(configuracion.Tileset.getInstance().getSILLA_IZ());
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setCod(data);
                         break;    
                     //OTROS    
-                    case "borde_casa":
+                    case Constant.BORDE_CASA:
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setCod(data);
                         for (int k = getIndice_i(); k < getIndice_i()+3; k++) {
                             for (int l = getIndice_j(); l < getIndice_j()+4; l++) {
@@ -592,17 +596,17 @@ public class LibsEditor {
                             }
                         }
                         break;
-                    case "resto_casa":
+                    case Constant.RESTO_CASA:
                         break;
-                    case "arbol":
+                    case Constant.ARBOL:
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setIcon(configuracion.Tileset.getInstance().getARBOL());
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setCod(data);
                         break;
-                    case "libreria":
+                    case Constant.LIBRERIA:
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setIcon(configuracion.Tileset.getInstance().getLIBRERIA());
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setCod(data);
                         break;
-                    case "mesa":
+                    case Constant.MESA:
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setIcon(configuracion.Tileset.getInstance().getMESA());
                         getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setCod(data);
                         break;

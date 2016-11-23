@@ -1,7 +1,9 @@
 package main;
 
-import configuracion.Parametros;
 import javax.swing.JLabel;
+
+import configuracion.Parametros;
+import utils.Constant;
 
 /**
  * Define las casillas que actuarán como enlace entre dos mapas diferentes
@@ -68,16 +70,16 @@ public final class Puerta extends JLabel{
         
         //Con este metodo desplazamos al personaje un pixel fuera del area de la posible puerta de retorno
         switch(panelJuego.getPersonaje().getUltimoMovimiento()){
-            case "ARRIBA":
+            case Constant.ARRIBA:
                 panelJuego.getPersonaje().setPosY(panelJuego.getPersonaje().getPosY() - 1);
                 break;
-            case "ABAJO":
+            case Constant.ABAJO:
                 panelJuego.getPersonaje().setPosY(panelJuego.getPersonaje().getPosY() + 1);
                 break;
-            case "DERECHA":
+            case Constant.DERECHA:
                 panelJuego.getPersonaje().setPosX(panelJuego.getPersonaje().getPosX() + 1);
                 break;
-            case "IZQUIERDA":
+            case Constant.IZQUIERDA:
                 panelJuego.getPersonaje().setPosX(panelJuego.getPersonaje().getPosX() - 1);
                 break;
         }

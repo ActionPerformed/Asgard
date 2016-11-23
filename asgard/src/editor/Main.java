@@ -20,6 +20,7 @@ import javax.swing.TransferHandler;
 import javax.swing.filechooser.FileNameExtensionFilter;
 
 import configuracion.Parametros;
+import utils.Constant;
 
 /**
  * Frame principal del editor de niveles
@@ -127,11 +128,11 @@ public final class Main extends javax.swing.JFrame {
             for (int j = 0; j < getNUM_HORIZONTALES(); j++) {
                 getCasilla()[i][j].getFondo().setVisible(true);
                 getCasilla()[i][j].getObjeto().setVisible(true);
-                if (getCasilla()[i][j].getObjeto().getCod()!=null && getCasilla()[i][j].getObjeto().getCod().equals("borde_casa")) {
+                if (getCasilla()[i][j].getObjeto().getCod()!=null && getCasilla()[i][j].getObjeto().getCod().equals(Constant.BORDE_CASA)) {
                     for (int k = i; k < i+3; k++) {
                         for (int l = j; l < j+4; l++) {
                             getCasilla()[k][l].getObjeto().setIcon(configuracion.Tileset.getInstance().getCASA()[k-i][l-j]);
-                            getCasilla()[k][l].getObjeto().setCod("resto_casa");
+                            getCasilla()[k][l].getObjeto().setCod(Constant.RESTO_CASA);
                             if (getCasilla()[k][l].getObjeto().getPuerta() == null) {
                                 getCasilla()[k][l].getObjeto().setTransitable(false);
                             }else{
@@ -140,7 +141,7 @@ public final class Main extends javax.swing.JFrame {
                             }
                         }
                     }
-                    getCasilla()[i][j].getObjeto().setCod("borde_casa");
+                    getCasilla()[i][j].getObjeto().setCod(Constant.BORDE_CASA);
                 }
             }
         }
@@ -168,7 +169,7 @@ public final class Main extends javax.swing.JFrame {
                 getCasilla()[i][j].getObjeto().addMouseListener(getListener());
                 getCasilla()[i][j].getObjeto().setVisible(false);
                 
-                getCasilla()[i][j].setFondo(new Tile(true,"hierba",configuracion.Tileset.getInstance().getHIERBA()));
+                getCasilla()[i][j].setFondo(new Tile(true,Constant.HIERBA,configuracion.Tileset.getInstance().getHIERBA()));
                 getLayeredPane().add(getCasilla()[i][j].getFondo(), new Integer(0));
                 getCasilla()[i][j].getFondo().setBounds(1+j*33, 1+i*33, 32, 32);
                 getCasilla()[i][j].getFondo().setTransferHandler(getThTile());
@@ -187,84 +188,84 @@ public final class Main extends javax.swing.JFrame {
         tileSetObjeto = new ArrayList<>();
         panelTileSet.removeAll();
         
-        getTileSetFondo().add(new Tile(true,"hierba",configuracion.Tileset.getInstance().getHIERBA()));
-        getTileSetFondo().add(new Tile(false,"agua",configuracion.Tileset.getInstance().getAGUA()));
-        getTileSetFondo().add(new Tile(true,"tarima",configuracion.Tileset.getInstance().getTARIMA()));
-        getTileSetFondo().add(new Tile(false,"blank",configuracion.Tileset.getInstance().getBLANK()));
-        getTileSetFondo().add(new Tile(true,"tierra",configuracion.Tileset.getInstance().getTIERRA()));
+        getTileSetFondo().add(new Tile(true,Constant.HIERBA,configuracion.Tileset.getInstance().getHIERBA()));
+        getTileSetFondo().add(new Tile(false,Constant.AGUA,configuracion.Tileset.getInstance().getAGUA()));
+        getTileSetFondo().add(new Tile(true,Constant.TARIMA,configuracion.Tileset.getInstance().getTARIMA()));
+        getTileSetFondo().add(new Tile(false,Constant.BLANK,configuracion.Tileset.getInstance().getBLANK()));
+        getTileSetFondo().add(new Tile(true,Constant.TIERRA,configuracion.Tileset.getInstance().getTIERRA()));
         
         //Alfombra
-        getTileSetFondo().add(new Tile(true,"alfombra_ar_iz",configuracion.Tileset.getInstance().getALFOMBRA_AR_IZ()));
-        getTileSetFondo().add(new Tile(true,"alfombra_ar_de",configuracion.Tileset.getInstance().getALFOMBRA_AR_DE()));
-        getTileSetFondo().add(new Tile(true,"alfombra_ab_iz",configuracion.Tileset.getInstance().getALFOMBRA_AB_IZ()));
-        getTileSetFondo().add(new Tile(true,"alfombra_ab_de",configuracion.Tileset.getInstance().getALFOMBRA_AB_DE()));
-        getTileSetFondo().add(new Tile(true,"alfombra_centro",configuracion.Tileset.getInstance().getALFOMBRA_CENTRO()));
-        getTileSetFondo().add(new Tile(true,"alfombra_ar",configuracion.Tileset.getInstance().getALFOMBRA_AR()));
-        getTileSetFondo().add(new Tile(true,"alfombra_ab",configuracion.Tileset.getInstance().getALFOMBRA_AB()));
-        getTileSetFondo().add(new Tile(true,"alfombra_de",configuracion.Tileset.getInstance().getALFOMBRA_DE()));
-        getTileSetFondo().add(new Tile(true,"alfombra_iz",configuracion.Tileset.getInstance().getALFOMBRA_IZ()));
+        getTileSetFondo().add(new Tile(true,Constant.ALFOMBRA_AR_IZ,configuracion.Tileset.getInstance().getALFOMBRA_AR_IZ()));
+        getTileSetFondo().add(new Tile(true,Constant.ALFOMBRA_AR_DE,configuracion.Tileset.getInstance().getALFOMBRA_AR_DE()));
+        getTileSetFondo().add(new Tile(true,Constant.ALFOMBRA_AB_IZ,configuracion.Tileset.getInstance().getALFOMBRA_AB_IZ()));
+        getTileSetFondo().add(new Tile(true,Constant.ALFOMBRA_AB_DE,configuracion.Tileset.getInstance().getALFOMBRA_AB_DE()));
+        getTileSetFondo().add(new Tile(true,Constant.ALFOMBRA_CENTRO,configuracion.Tileset.getInstance().getALFOMBRA_CENTRO()));
+        getTileSetFondo().add(new Tile(true,Constant.ALFOMBRA_AR,configuracion.Tileset.getInstance().getALFOMBRA_AR()));
+        getTileSetFondo().add(new Tile(true,Constant.ALFOMBRA_AB,configuracion.Tileset.getInstance().getALFOMBRA_AB()));
+        getTileSetFondo().add(new Tile(true,Constant.ALFOMBRA_DE,configuracion.Tileset.getInstance().getALFOMBRA_DE()));
+        getTileSetFondo().add(new Tile(true,Constant.ALFOMBRA_IZ,configuracion.Tileset.getInstance().getALFOMBRA_IZ()));
         
-        getTileSetObjeto().add(new Objeto(false,"borde_tierra_ab",configuracion.Tileset.getInstance().getBORDE_TIERRA_AB()));
-        getTileSetObjeto().add(new Objeto(false,"borde_tierra_ar",configuracion.Tileset.getInstance().getBORDE_TIERRA_AR()));
-        getTileSetObjeto().add(new Objeto(false,"borde_tierra_de",configuracion.Tileset.getInstance().getBORDE_TIERRA_DE()));
-        getTileSetObjeto().add(new Objeto(false,"borde_tierra_iz",configuracion.Tileset.getInstance().getBORDE_TIERRA_IZ()));
-        getTileSetObjeto().add(new Objeto(false,"borde_tierra_ab_de",configuracion.Tileset.getInstance().getBORDE_TIERRA_AB_DE()));
-        getTileSetObjeto().add(new Objeto(false,"borde_tierra_ab_iz",configuracion.Tileset.getInstance().getBORDE_TIERRA_AB_IZ()));
-        getTileSetObjeto().add(new Objeto(false,"borde_tierra_ar_de",configuracion.Tileset.getInstance().getBORDE_TIERRA_AR_DE()));
-        getTileSetObjeto().add(new Objeto(false,"borde_tierra_ar_iz",configuracion.Tileset.getInstance().getBORDE_TIERRA_AR_IZ()));
-        getTileSetObjeto().add(new Objeto(false,"tierra_ab_de_esquina",configuracion.Tileset.getInstance().getBORDE_TIERRA_AB_DE_ESQUINA()));
-        getTileSetObjeto().add(new Objeto(false,"tierra_ab_iz_esquina",configuracion.Tileset.getInstance().getBORDE_TIERRA_AB_IZ_ESQUINA()));
-        getTileSetObjeto().add(new Objeto(false,"tierra_ar_de_esquina",configuracion.Tileset.getInstance().getBORDE_TIERRA_AR_DE_ESQUINA()));
-        getTileSetObjeto().add(new Objeto(false,"tierra_ar_iz_esquina",configuracion.Tileset.getInstance().getBORDE_TIERRA_AR_IZ_ESQUINA()));
+        getTileSetObjeto().add(new Objeto(false,Constant.BORDE_TIERRA_AB,configuracion.Tileset.getInstance().getBORDE_TIERRA_AB()));
+        getTileSetObjeto().add(new Objeto(false,Constant.BORDE_TIERRA_AR,configuracion.Tileset.getInstance().getBORDE_TIERRA_AR()));
+        getTileSetObjeto().add(new Objeto(false,Constant.BORDE_TIERRA_DE,configuracion.Tileset.getInstance().getBORDE_TIERRA_DE()));
+        getTileSetObjeto().add(new Objeto(false,Constant.BORDE_TIERRA_IZ,configuracion.Tileset.getInstance().getBORDE_TIERRA_IZ()));
+        getTileSetObjeto().add(new Objeto(false,Constant.BORDE_TIERRA_AB_DE,configuracion.Tileset.getInstance().getBORDE_TIERRA_AB_DE()));
+        getTileSetObjeto().add(new Objeto(false,Constant.BORDE_TIERRA_AB_IZ,configuracion.Tileset.getInstance().getBORDE_TIERRA_AB_IZ()));
+        getTileSetObjeto().add(new Objeto(false,Constant.BORDE_TIERRA_AR_DE,configuracion.Tileset.getInstance().getBORDE_TIERRA_AR_DE()));
+        getTileSetObjeto().add(new Objeto(false,Constant.BORDE_TIERRA_AR_IZ,configuracion.Tileset.getInstance().getBORDE_TIERRA_AR_IZ()));
+        getTileSetObjeto().add(new Objeto(false,Constant.TIERRA_AB_DE_ESQUINA,configuracion.Tileset.getInstance().getBORDE_TIERRA_AB_DE_ESQUINA()));
+        getTileSetObjeto().add(new Objeto(false,Constant.TIERRA_AB_IZ_ESQUINA,configuracion.Tileset.getInstance().getBORDE_TIERRA_AB_IZ_ESQUINA()));
+        getTileSetObjeto().add(new Objeto(false,Constant.TIERRA_AR_DE_ESQUINA,configuracion.Tileset.getInstance().getBORDE_TIERRA_AR_DE_ESQUINA()));
+        getTileSetObjeto().add(new Objeto(false,Constant.TIERRA_AR_IZ_ESQUINA,configuracion.Tileset.getInstance().getBORDE_TIERRA_AR_IZ_ESQUINA()));
         
         //NPCs
-        getTileSetObjeto().add(new Objeto(false,"npc_hombre",configuracion.Tileset.getInstance().getNPC_HOMBRE()));
-        getTileSetObjeto().add(new Objeto(false,"npc_mujer",configuracion.Tileset.getInstance().getNPC_MUJER()));
+        getTileSetObjeto().add(new Objeto(false,Constant.NPC_HOMBRE,configuracion.Tileset.getInstance().getNPC_HOMBRE()));
+        getTileSetObjeto().add(new Objeto(false,Constant.NPC_MUJER,configuracion.Tileset.getInstance().getNPC_MUJER()));
                 
         //Borde de hierba
-        getTileSetObjeto().add(new Objeto(true,"borde_agua_ab",configuracion.Tileset.getInstance().getBORDE_AGUA_AB()));
-        getTileSetObjeto().add(new Objeto(true,"borde_agua_ar",configuracion.Tileset.getInstance().getBORDE_AGUA_AR()));
-        getTileSetObjeto().add(new Objeto(true,"borde_agua_de",configuracion.Tileset.getInstance().getBORDE_AGUA_DE()));
-        getTileSetObjeto().add(new Objeto(true,"borde_agua_iz",configuracion.Tileset.getInstance().getBORDE_AGUA_IZ()));
-        getTileSetObjeto().add(new Objeto(true,"borde_agua_ab_de",configuracion.Tileset.getInstance().getBORDE_AGUA_AB_DE()));
-        getTileSetObjeto().add(new Objeto(true,"borde_agua_ab_iz",configuracion.Tileset.getInstance().getBORDE_AGUA_AB_IZ()));
-        getTileSetObjeto().add(new Objeto(true,"borde_agua_ar_de",configuracion.Tileset.getInstance().getBORDE_AGUA_AR_DE()));
-        getTileSetObjeto().add(new Objeto(true,"borde_agua_ar_iz",configuracion.Tileset.getInstance().getBORDE_AGUA_AR_IZ()));
-        getTileSetObjeto().add(new Objeto(true,"borde_agua_ab_de_esq",configuracion.Tileset.getInstance().getBORDE_AGUA_AB_DE_ESQUINA()));
-        getTileSetObjeto().add(new Objeto(true,"borde_agua_ab_iz_esq",configuracion.Tileset.getInstance().getBORDE_AGUA_AB_IZ_ESQUINA()));
-        getTileSetObjeto().add(new Objeto(true,"borde_agua_ar_de_esq",configuracion.Tileset.getInstance().getBORDE_AGUA_AR_DE_ESQUINA()));
-        getTileSetObjeto().add(new Objeto(true,"borde_agua_ar_iz_esq",configuracion.Tileset.getInstance().getBORDE_AGUA_AR_IZ_ESQUINA()));
+        getTileSetObjeto().add(new Objeto(true,Constant.BORDE_AGUA_AB,configuracion.Tileset.getInstance().getBORDE_AGUA_AB()));
+        getTileSetObjeto().add(new Objeto(true,Constant.BORDE_AGUA_AR,configuracion.Tileset.getInstance().getBORDE_AGUA_AR()));
+        getTileSetObjeto().add(new Objeto(true,Constant.BORDE_AGUA_DE,configuracion.Tileset.getInstance().getBORDE_AGUA_DE()));
+        getTileSetObjeto().add(new Objeto(true,Constant.BORDE_AGUA_IZ,configuracion.Tileset.getInstance().getBORDE_AGUA_IZ()));
+        getTileSetObjeto().add(new Objeto(true,Constant.BORDE_AGUA_AB_DE,configuracion.Tileset.getInstance().getBORDE_AGUA_AB_DE()));
+        getTileSetObjeto().add(new Objeto(true,Constant.BORDE_AGUA_AB_IZ,configuracion.Tileset.getInstance().getBORDE_AGUA_AB_IZ()));
+        getTileSetObjeto().add(new Objeto(true,Constant.BORDE_AGUA_AR_DE,configuracion.Tileset.getInstance().getBORDE_AGUA_AR_DE()));
+        getTileSetObjeto().add(new Objeto(true,Constant.BORDE_AGUA_AR_IZ,configuracion.Tileset.getInstance().getBORDE_AGUA_AR_IZ()));
+        getTileSetObjeto().add(new Objeto(true,Constant.BORDE_AGUA_AB_DE_ESQ,configuracion.Tileset.getInstance().getBORDE_AGUA_AB_DE_ESQUINA()));
+        getTileSetObjeto().add(new Objeto(true,Constant.BORDE_AGUA_AB_IZ_ESQ,configuracion.Tileset.getInstance().getBORDE_AGUA_AB_IZ_ESQUINA()));
+        getTileSetObjeto().add(new Objeto(true,Constant.BORDE_AGUA_AR_DE_ESQ,configuracion.Tileset.getInstance().getBORDE_AGUA_AR_DE_ESQUINA()));
+        getTileSetObjeto().add(new Objeto(true,Constant.BORDE_AGUA_AR_IZ_ESQ,configuracion.Tileset.getInstance().getBORDE_AGUA_AR_IZ_ESQUINA()));
         
         //Borde de arena
-        getTileSetObjeto().add(new Objeto(true,"borde_agua2_ab",configuracion.Tileset.getInstance().getBORDE_AGUA2_AB()));
-        getTileSetObjeto().add(new Objeto(true,"borde_agua2_ar",configuracion.Tileset.getInstance().getBORDE_AGUA2_AR()));
-        getTileSetObjeto().add(new Objeto(true,"borde_agua2_de",configuracion.Tileset.getInstance().getBORDE_AGUA2_DE()));
-        getTileSetObjeto().add(new Objeto(true,"borde_agua2_iz",configuracion.Tileset.getInstance().getBORDE_AGUA2_IZ()));
-        getTileSetObjeto().add(new Objeto(true,"borde_agua2_ab_de",configuracion.Tileset.getInstance().getBORDE_AGUA2_AB_DE()));
-        getTileSetObjeto().add(new Objeto(true,"borde_agua2_ab_iz",configuracion.Tileset.getInstance().getBORDE_AGUA2_AB_IZ()));
-        getTileSetObjeto().add(new Objeto(true,"borde_agua2_ar_de",configuracion.Tileset.getInstance().getBORDE_AGUA2_AR_DE()));
-        getTileSetObjeto().add(new Objeto(true,"borde_agua2_ar_iz",configuracion.Tileset.getInstance().getBORDE_AGUA2_AR_IZ()));
-        getTileSetObjeto().add(new Objeto(true,"borde_agua2_ab_de_esq",configuracion.Tileset.getInstance().getBORDE_AGUA2_AB_DE_ESQUINA()));
-        getTileSetObjeto().add(new Objeto(true,"borde_agua2_ab_iz_esq",configuracion.Tileset.getInstance().getBORDE_AGUA2_AB_IZ_ESQUINA()));
-        getTileSetObjeto().add(new Objeto(true,"borde_agua2_ar_de_esq",configuracion.Tileset.getInstance().getBORDE_AGUA2_AR_DE_ESQUINA()));
-        getTileSetObjeto().add(new Objeto(true,"borde_agua2_ar_iz_esq",configuracion.Tileset.getInstance().getBORDE_AGUA2_AR_IZ_ESQUINA()));
+        getTileSetObjeto().add(new Objeto(true,Constant.BORDE_AGUA2_AB,configuracion.Tileset.getInstance().getBORDE_AGUA2_AB()));
+        getTileSetObjeto().add(new Objeto(true,Constant.BORDE_AGUA2_AR,configuracion.Tileset.getInstance().getBORDE_AGUA2_AR()));
+        getTileSetObjeto().add(new Objeto(true,Constant.BORDE_AGUA2_DE,configuracion.Tileset.getInstance().getBORDE_AGUA2_DE()));
+        getTileSetObjeto().add(new Objeto(true,Constant.BORDE_AGUA2_IZ,configuracion.Tileset.getInstance().getBORDE_AGUA2_IZ()));
+        getTileSetObjeto().add(new Objeto(true,Constant.BORDE_AGUA2_AB_DE,configuracion.Tileset.getInstance().getBORDE_AGUA2_AB_DE()));
+        getTileSetObjeto().add(new Objeto(true,Constant.BORDE_AGUA2_AB_IZ,configuracion.Tileset.getInstance().getBORDE_AGUA2_AB_IZ()));
+        getTileSetObjeto().add(new Objeto(true,Constant.BORDE_AGUA2_AR_DE,configuracion.Tileset.getInstance().getBORDE_AGUA2_AR_DE()));
+        getTileSetObjeto().add(new Objeto(true,Constant.BORDE_AGUA2_AR_IZ,configuracion.Tileset.getInstance().getBORDE_AGUA2_AR_IZ()));
+        getTileSetObjeto().add(new Objeto(true,Constant.BORDE_AGUA2_AB_DE_ESQ,configuracion.Tileset.getInstance().getBORDE_AGUA2_AB_DE_ESQUINA()));
+        getTileSetObjeto().add(new Objeto(true,Constant.BORDE_AGUA2_AB_IZ_ESQ,configuracion.Tileset.getInstance().getBORDE_AGUA2_AB_IZ_ESQUINA()));
+        getTileSetObjeto().add(new Objeto(true,Constant.BORDE_AGUA2_AR_DE_ESQ,configuracion.Tileset.getInstance().getBORDE_AGUA2_AR_DE_ESQUINA()));
+        getTileSetObjeto().add(new Objeto(true,Constant.BORDE_AGUA2_AR_IZ_ESQ,configuracion.Tileset.getInstance().getBORDE_AGUA2_AR_IZ_ESQUINA()));
                 
         //Rampas
-        getTileSetObjeto().add(new Objeto(true,"rampa_ab",configuracion.Tileset.getInstance().getRAMPA_AB()));
-        getTileSetObjeto().add(new Objeto(true,"rampa_ar",configuracion.Tileset.getInstance().getRAMPA_AR()));
-        getTileSetObjeto().add(new Objeto(true,"rampa_de",configuracion.Tileset.getInstance().getRAMPA_DE()));
-        getTileSetObjeto().add(new Objeto(true,"rampa_iz",configuracion.Tileset.getInstance().getRAMPA_IZ()));
+        getTileSetObjeto().add(new Objeto(true,Constant.RAMPA_AB,configuracion.Tileset.getInstance().getRAMPA_AB()));
+        getTileSetObjeto().add(new Objeto(true,Constant.RAMPA_AR,configuracion.Tileset.getInstance().getRAMPA_AR()));
+        getTileSetObjeto().add(new Objeto(true,Constant.RAMPA_DE,configuracion.Tileset.getInstance().getRAMPA_DE()));
+        getTileSetObjeto().add(new Objeto(true,Constant.RAMPA_IZ,configuracion.Tileset.getInstance().getRAMPA_IZ()));
         
         //Sillas
-        getTileSetObjeto().add(new Objeto(false,"silla_ab",configuracion.Tileset.getInstance().getSILLA_AB()));
-        getTileSetObjeto().add(new Objeto(false,"silla_ar",configuracion.Tileset.getInstance().getSILLA_AR()));
-        getTileSetObjeto().add(new Objeto(false,"silla_de",configuracion.Tileset.getInstance().getSILLA_DE()));
-        getTileSetObjeto().add(new Objeto(false,"silla_iz",configuracion.Tileset.getInstance().getSILLA_IZ()));
+        getTileSetObjeto().add(new Objeto(false,Constant.SILLA_AB,configuracion.Tileset.getInstance().getSILLA_AB()));
+        getTileSetObjeto().add(new Objeto(false,Constant.SILLA_AR,configuracion.Tileset.getInstance().getSILLA_AR()));
+        getTileSetObjeto().add(new Objeto(false,Constant.SILLA_DE,configuracion.Tileset.getInstance().getSILLA_DE()));
+        getTileSetObjeto().add(new Objeto(false,Constant.SILLA_IZ,configuracion.Tileset.getInstance().getSILLA_IZ()));
         
-        getTileSetObjeto().add(new Objeto(false,"libreria",configuracion.Tileset.getInstance().getLIBRERIA()));
-        getTileSetObjeto().add(new Objeto(false,"mesa",configuracion.Tileset.getInstance().getMESA()));
-        getTileSetObjeto().add(new Objeto(false,"borde_casa",configuracion.Tileset.getInstance().getCASA()[0][0]));
-        getTileSetObjeto().add(new Objeto(false,"arbol",configuracion.Tileset.getInstance().getARBOL()));
+        getTileSetObjeto().add(new Objeto(false,Constant.LIBRERIA,configuracion.Tileset.getInstance().getLIBRERIA()));
+        getTileSetObjeto().add(new Objeto(false,Constant.MESA,configuracion.Tileset.getInstance().getMESA()));
+        getTileSetObjeto().add(new Objeto(false,Constant.BORDE_CASA,configuracion.Tileset.getInstance().getCASA()[0][0]));
+        getTileSetObjeto().add(new Objeto(false,Constant.ARBOL,configuracion.Tileset.getInstance().getARBOL()));
                 
         for (int i = 0; i < getTileSetFondo().size(); i++) {
             panelTileSet.add(getTileSetFondo().get(i));
@@ -482,8 +483,6 @@ public final class Main extends javax.swing.JFrame {
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always regenerated by the Form Editor.
      */
-    @SuppressWarnings("unchecked")
-    // <editor-fold defaultstate="collapsed" desc="Generated Code">
     private void initComponents() {
 
         buttonGroup1 = new javax.swing.ButtonGroup();
