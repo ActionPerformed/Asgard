@@ -27,7 +27,6 @@ public class LibsEditor {
     
     private editor.Casilla[][] mapaCasillas;
     private boolean mapaInterior;
-//    private editor.Casilla[][] casilla;
     
     /**
      * Metodo para generar un String en lenguaje XML que recoge el contenido de
@@ -210,16 +209,9 @@ public class LibsEditor {
      */
     private class SaxParserAsgard extends DefaultHandler {
 
-        private boolean mapa=false;
-        private boolean mapa_id=false;
-        private boolean casilla=false;
-        private boolean casilla_i=false;
-        private boolean casilla_j=false;
-        private boolean casilla_transitable=false;
         private boolean fondo=false;
         private boolean objeto=false;
         private boolean descripcion=false;
-        private boolean puerta=false;
         private boolean mapa_destino=false;
         private boolean i_destino=false;
         private boolean j_destino=false;
@@ -248,10 +240,8 @@ public class LibsEditor {
                     }else{
                         mapaInterior = false;
                     }
-                    setMapa(true);
                     break;
                 case "casilla":
-                    setCasilla(true);
                     //Guardo las coordenadas de la casilla
                     setIndice_i(Integer.parseInt(atrbts.getValue(0)));
                     setIndice_j(Integer.parseInt(atrbts.getValue(1)));
@@ -272,7 +262,6 @@ public class LibsEditor {
                     break;
                 case "puerta":
                     getMapaCasillas()[getIndice_i()][getIndice_j()].getObjeto().setPuerta(new Objeto.Puerta());
-                    setPuerta(true);
                     break;
                 case "descripcion":
                     setDescripcion(true);
@@ -301,20 +290,11 @@ public class LibsEditor {
         @Override
         public void endElement(String uri, String localName, String qName) throws SAXException {
             switch (qName){
-                case "mapa":
-                    setMapa(false);
-                    break;
-                case "casilla":
-                    setCasilla(false);
-                    break;
                 case "fondo":
                     setFondo(false);
                     break;
                 case "objeto":
                     setObjeto(false);
-                    break;
-                case "puerta":
-                    setPuerta(false);
                     break;
                 case "descripcion":
                     setDescripcion(false);
@@ -640,89 +620,6 @@ public class LibsEditor {
             }
         }
 
-        /**
-         * @return the mapa
-         */
-        public boolean isMapa() {
-            return mapa;
-        }
-
-        /**
-         * @param mapa the mapa to set
-         */
-        public void setMapa(boolean mapa) {
-            this.mapa = mapa;
-        }
-
-        /**
-         * @return the mapa_id
-         */
-        public boolean isMapa_id() {
-            return mapa_id;
-        }
-
-        /**
-         * @param mapa_id the mapa_id to set
-         */
-        public void setMapa_id(boolean mapa_id) {
-            this.mapa_id = mapa_id;
-        }
-
-        /**
-         * @return the casilla
-         */
-        public boolean isCasilla() {
-            return casilla;
-        }
-
-        /**
-         * @param casilla the casilla to set
-         */
-        public void setCasilla(boolean casilla) {
-            this.casilla = casilla;
-        }
-
-        /**
-         * @return the casilla_i
-         */
-        public boolean isCasilla_i() {
-            return casilla_i;
-        }
-
-        /**
-         * @param casilla_i the casilla_i to set
-         */
-        public void setCasilla_i(boolean casilla_i) {
-            this.casilla_i = casilla_i;
-        }
-
-        /**
-         * @return the casilla_j
-         */
-        public boolean isCasilla_j() {
-            return casilla_j;
-        }
-
-        /**
-         * @param casilla_j the casilla_j to set
-         */
-        public void setCasilla_j(boolean casilla_j) {
-            this.casilla_j = casilla_j;
-        }
-
-        /**
-         * @return the casilla_transitable
-         */
-        public boolean isCasilla_transitable() {
-            return casilla_transitable;
-        }
-
-        /**
-         * @param casilla_transitable the casilla_transitable to set
-         */
-        public void setCasilla_transitable(boolean casilla_transitable) {
-            this.casilla_transitable = casilla_transitable;
-        }
 
         /**
          * @return the fondo
@@ -766,19 +663,6 @@ public class LibsEditor {
             this.descripcion = descripcion;
         }
 
-        /**
-         * @return the puerta
-         */
-        public boolean isPuerta() {
-            return puerta;
-        }
-
-        /**
-         * @param puerta the puerta to set
-         */
-        public void setPuerta(boolean puerta) {
-            this.puerta = puerta;
-        }
 
         /**
          * @return the mapa_destino
