@@ -9,6 +9,7 @@ import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+import javax.swing.BorderFactory;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JComponent;
@@ -29,7 +30,9 @@ import utils.Constant;
  */
 public final class Main extends javax.swing.JFrame {
 
-    private final int NUM_VERTICALES = Parametros.getInstance().getALTO_PANTALLA_JUEGO()/32;
+	private static final long serialVersionUID = -6024071720328191394L;
+	
+	private final int NUM_VERTICALES = Parametros.getInstance().getALTO_PANTALLA_JUEGO()/32;
     private final int NUM_HORIZONTALES = Parametros.getInstance().getANCHO_PANTALLA_JUEGO()/32;
 
     //private Tileset tileset;
@@ -420,7 +423,7 @@ public final class Main extends javax.swing.JFrame {
                 for (int j = 0; j < getNUM_HORIZONTALES(); j++) {
                     if (e.getSource().equals(getCasilla()[i][j].getObjeto())) {
                         setCasillaConFocus(getCasilla()[i][j]);
-                        panelPropiedades.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Casilla["+i+","+j+"]"));
+                        panelPropiedades.setBorder(BorderFactory.createTitledBorder(BorderFactory.createEtchedBorder(), "Casilla["+i+","+j+"]"));
                         lbCodFondo.setText(getCasilla()[i][j].getFondo().getCod());
                         lbCodObjeto.setText(getCasilla()[i][j].getObjeto().getCod());
                         if (getCasilla()[i][j].getFondo().isTransitable() && getCasilla()[i][j].getObjeto().isTransitable()) {
@@ -872,9 +875,8 @@ public final class Main extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Main.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
         }
-        //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {

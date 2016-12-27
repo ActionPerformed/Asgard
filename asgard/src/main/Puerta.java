@@ -21,7 +21,8 @@ import utils.Constant;
  */
 public final class Puerta extends JLabel{
     
-    private static final int numTilesHorizontal = Parametros.getInstance().getANCHO_PANTALLA_JUEGO()/32;
+	private static final long serialVersionUID = 8648493133391048410L;
+	private static final int numTilesHorizontal = Parametros.getInstance().getANCHO_PANTALLA_JUEGO()/32;
     private static final int numTilesVertical = Parametros.getInstance().getALTO_PANTALLA_JUEGO()/32;
     private PanelJuego panelJuego;
     private int idPantallaDestino;

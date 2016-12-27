@@ -17,7 +17,8 @@ import javax.swing.JLabel;
  */
 public class Tile extends JLabel{
     
-    private String cod;
+	private static final long serialVersionUID = -5425762447847021743L;
+	private String cod;
     private boolean transitable;
 
     /*

@@ -22,7 +22,8 @@ import javax.swing.JTextArea;
  */
 final class PanelDialogo extends JPanel{
     
-    private static final int CARACTERES_POR_DIALOGO = 45;
+	private static final long serialVersionUID = -2690859560020876139L;
+	private static final int CARACTERES_POR_DIALOGO = 45;
     private JTextArea taDialogo = new JTextArea();
 
     /**
@@ -162,50 +163,5 @@ final class PanelDialogo extends JPanel{
         
         int numCaracteresPrimeraLinea = procesarCadena(dialogo,0,true);
         return procesarCadena(dialogo,numCaracteresPrimeraLinea,false);
-    }
-    
-    /**
-     * Divide un texto en trozos para su mejor visión en pantalla. 
-     * A partir del <code>caracterInicial</code> indicado, tomará tantas palabras
-     * enteras como pueda sin sobrepasar la cantidad indicada por
-     * <code>CARACTERES_POR_DIALOGO</code> y la mostrará en pantalla para psoteriormente devolver 
-     * la nueva posición de corte del diálogo.
-     * 
-     * @param caracterInicial Posicion del texto donde empezamos a leer
-     * @param dialogo Texto a procesar
-     * @param esPrimeraLinea 
-     * <ul>
-     *  <li><code>True</code>: si es la primera línea del cuadro de diálogos.</li>
-     *  <li><code>False</code>: si es la segunda línea del cuadro de diálogos.</li>
-     * </ul>
-     * @return Indice del carácter final mostrado
-     */
-    @Deprecated
-    public int divideDialogo(int caracterInicial, String dialogo, boolean esPrimeraLinea){
-        try{
-            dialogo = dialogo.substring(caracterInicial);
-            int indiceDeCorte = dialogo.lastIndexOf(" ",CARACTERES_POR_DIALOGO);
-
-            if(esPrimeraLinea){
-                if (CARACTERES_POR_DIALOGO > dialogo.substring(0,dialogo.length()).trim().length()) {
-                    taDialogo.setText(dialogo.trim());
-                    return -10000;
-                }else{
-                    taDialogo.setText(dialogo.substring(0,indiceDeCorte).trim());
-                    return indiceDeCorte;
-                }
-            }else{
-                if (CARACTERES_POR_DIALOGO > dialogo.substring(0,dialogo.length()).trim().length()) {
-                    taDialogo.setText(taDialogo.getText()+"\n"+dialogo.trim());
-                    return -10000;
-                }else{
-                    taDialogo.setText(taDialogo.getText()+"\n"+dialogo.substring(0,indiceDeCorte).trim());
-                    return indiceDeCorte;
-                }
-            }
-        }catch(java.lang.StringIndexOutOfBoundsException sioobe){ //Sucede al leer un interactuar con un segundo dialogo sin haber terminado el primero
-            taDialogo.setText(dialogo.trim());
-            return -10000;
-        }
     }
 }

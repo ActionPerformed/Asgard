@@ -22,7 +22,8 @@ import javax.swing.JLabel;
  */
 public final class Personaje extends JLabel implements Runnable{
      
-    private final static int PERIODO_PROCESO = Parametros.getInstance().getMILISEGUNDOS_ENTRE_FRAMES();
+	private static final long serialVersionUID = -5743345877571430783L;
+	private final static int PERIODO_PROCESO = Parametros.getInstance().getMILISEGUNDOS_ENTRE_FRAMES();
     private final static int velocidad = 7; //cuanto más alto, mas lenta se moverá la animacion
     
     private Thread hilo;
@@ -54,7 +55,7 @@ public final class Personaje extends JLabel implements Runnable{
     public Personaje (PantallaJuego pantallaJuego){
         this.pantallaJuego = pantallaJuego;
         this.indiceAnimacion = 0;
-        this.setIcon(configuracion.Tileset.getInstance().PERSONAJE_ABA[indiceAnimacion]);
+        this.setIcon(configuracion.Tileset.getInstance().getPERSONAJE_ABA()[indiceAnimacion]);
         this.posX = 200;
         this.posY = 350;
         setBounds((int)posX,(int)posY,32,32);  
@@ -72,28 +73,28 @@ public final class Personaje extends JLabel implements Runnable{
         int keyCode = evt.getKeyCode();
         switch( keyCode ) { 
             case KeyEvent.VK_RIGHT:
-                this.setIcon(configuracion.Tileset.getInstance().PERSONAJE_DER[indiceAnimacion/velocidad]);
+                this.setIcon(configuracion.Tileset.getInstance().getPERSONAJE_DER()[indiceAnimacion/velocidad]);
                 movDerecha=true && !hayDialogo;
                 movIzquierda=false;
                 movArriba=false;
                 movAbajo=false;
                 break;
             case KeyEvent.VK_LEFT:
-                this.setIcon(configuracion.Tileset.getInstance().PERSONAJE_IZQ[indiceAnimacion/velocidad]);
+                this.setIcon(configuracion.Tileset.getInstance().getPERSONAJE_IZQ()[indiceAnimacion/velocidad]);
                 movDerecha=false;
                 movIzquierda=true && !hayDialogo;
                 movArriba=false;
                 movAbajo=false;
                 break;
             case KeyEvent.VK_UP:
-                this.setIcon(configuracion.Tileset.getInstance().PERSONAJE_ARR[indiceAnimacion/velocidad]);
+                this.setIcon(configuracion.Tileset.getInstance().getPERSONAJE_ARR()[indiceAnimacion/velocidad]);
                 movDerecha=false;
                 movIzquierda=false;
                 movArriba=true && !hayDialogo;
                 movAbajo=false;
                 break;
             case KeyEvent.VK_DOWN:
-                this.setIcon(configuracion.Tileset.getInstance().PERSONAJE_ABA[indiceAnimacion/velocidad]);
+                this.setIcon(configuracion.Tileset.getInstance().getPERSONAJE_ABA()[indiceAnimacion/velocidad]);
                 movDerecha=false;
                 movIzquierda=false;
                 movArriba=false;
@@ -161,24 +162,24 @@ public final class Personaje extends JLabel implements Runnable{
             if (movDerecha && pantallaJuego.esCaminable((int)getLocation().getX(),(int)getLocation().getY(),2,0)) {
                 posX+=2;
                 indiceAnimacion = (indiceAnimacion+1)%(4*velocidad);
-                this.setIcon(configuracion.Tileset.getInstance().PERSONAJE_DER[indiceAnimacion/velocidad]);
+                this.setIcon(configuracion.Tileset.getInstance().getPERSONAJE_DER()[indiceAnimacion/velocidad]);
             }
             if (movIzquierda && pantallaJuego.esCaminable((int)getLocation().getX(),(int)getLocation().getY(),-2,0)) {
                 posX-=2;
                 indiceAnimacion = (indiceAnimacion+1)%(4*velocidad);
-                this.setIcon(configuracion.Tileset.getInstance().PERSONAJE_IZQ[indiceAnimacion/velocidad]);
+                this.setIcon(configuracion.Tileset.getInstance().getPERSONAJE_IZQ()[indiceAnimacion/velocidad]);
             }
             if (movArriba && pantallaJuego.esCaminable((int)getLocation().getX(),(int)getLocation().getY(),0,-2)) {
                 posY-=2;
                 PantallaJuego.getCapaPantalla().setLayer(this, (2*(((int)posY+32)/32))+1);
                 indiceAnimacion = (indiceAnimacion+1)%(4*velocidad);
-                this.setIcon(configuracion.Tileset.getInstance().PERSONAJE_ARR[indiceAnimacion/velocidad]);
+                this.setIcon(configuracion.Tileset.getInstance().getPERSONAJE_ARR()[indiceAnimacion/velocidad]);
             }
             if (movAbajo && pantallaJuego.esCaminable((int)getLocation().getX(),(int)getLocation().getY(),0,2)) {
                 posY+=2;
                 PantallaJuego.getCapaPantalla().setLayer(this, (2*(((int)posY+32)/32))+1);
                 indiceAnimacion = (indiceAnimacion+1)%(4*velocidad);
-                this.setIcon(configuracion.Tileset.getInstance().PERSONAJE_ABA[indiceAnimacion/velocidad]);
+                this.setIcon(configuracion.Tileset.getInstance().getPERSONAJE_ABA()[indiceAnimacion/velocidad]);
             }
             
             //Impedimos que el personaje se salga de los bordes

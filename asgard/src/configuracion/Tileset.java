@@ -23,44 +23,44 @@ public class Tileset {
     
     public static boolean dia = diaInicioJuego;
     
-    Icon[] NUBE;
-    Icon[] HIERBA;
+    private Icon[] NUBE;
+    private Icon[] HIERBA;
     
-    public Icon[] PERSONAJE_DER;
-    public Icon[] PERSONAJE_IZQ;
-    public Icon[] PERSONAJE_ARR;    
-    public Icon[] PERSONAJE_ABA;
+    private Icon[] PERSONAJE_DER;
+    private Icon[] PERSONAJE_IZQ;
+    private Icon[] PERSONAJE_ARR;    
+    private Icon[] PERSONAJE_ABA;
     
     // NPCs
     
-    Icon NPC_HOMBRE;
-    Icon NPC_MUJER;
+    private Icon NPC_HOMBRE;
+    private Icon NPC_MUJER;
     
     // CASILLAS DE FONDO
     
-    Icon TIERRA; //32x32
-    Icon BLANK; //32x32
-    Icon TARIMA; //32x32
-    Icon AGUA; //32x32
-    Icon ARBOL; //32x48
+    private Icon TIERRA; //32x32
+    private Icon BLANK; //32x32
+    private Icon TARIMA; //32x32
+    private Icon AGUA; //32x32
+    private Icon ARBOL; //32x48
     
     //TILESET DE CORNISAS
     
-    Icon BORDE_TIERRA_AR_IZ;
-    Icon BORDE_TIERRA_AR_DE;
-    Icon BORDE_TIERRA_AB_IZ;
-    Icon BORDE_TIERRA_AB_DE;
+    private Icon BORDE_TIERRA_AR_IZ;
+    private Icon BORDE_TIERRA_AR_DE;
+    private Icon BORDE_TIERRA_AB_IZ;
+    private Icon BORDE_TIERRA_AB_DE;
     
-    Icon BORDE_TIERRA_AR_IZ_ESQUINA;
-    Icon BORDE_TIERRA_AR_DE_ESQUINA;
-    Icon BORDE_TIERRA_AB_IZ_ESQUINA;
-    Icon BORDE_TIERRA_AB_DE_ESQUINA;
+    private Icon BORDE_TIERRA_AR_IZ_ESQUINA;
+    private Icon BORDE_TIERRA_AR_DE_ESQUINA;
+    private Icon BORDE_TIERRA_AB_IZ_ESQUINA;
+    private Icon BORDE_TIERRA_AB_DE_ESQUINA;
         
-    Icon[] BORDE_TIERRA_AR;
+    private Icon[] BORDE_TIERRA_AR;
     
-    Icon[] BORDE_TIERRA_AB;
-    Icon[] BORDE_TIERRA_DE;
-    Icon[] BORDE_TIERRA_IZ;
+    private Icon[] BORDE_TIERRA_AB;
+    private Icon[] BORDE_TIERRA_DE;
+    private Icon[] BORDE_TIERRA_IZ;
     
     //TILESET DE ALFOMBRA
     
@@ -89,49 +89,49 @@ public class Tileset {
     
     //TILESET DE RAMPAS
     
-    Icon RAMPA_AB;
-    Icon RAMPA_AR;
-    Icon RAMPA_DE;
-    Icon RAMPA_IZ; 
+    private Icon RAMPA_AB;
+    private Icon RAMPA_AR;
+    private Icon RAMPA_DE;
+    private Icon RAMPA_IZ; 
         
     //TILESET DE COSTA de HIERBA
     
-    Icon BORDE_AGUA_AR_IZ;
-    Icon BORDE_AGUA_AR_DE;
-    Icon BORDE_AGUA_AB_IZ;
-    Icon BORDE_AGUA_AB_DE;
-    Icon BORDE_AGUA_AR_IZ_ESQUINA;
-    Icon BORDE_AGUA_AR_DE_ESQUINA;
-    Icon BORDE_AGUA_AB_IZ_ESQUINA;
-    Icon BORDE_AGUA_AB_DE_ESQUINA;
-    Icon[] BORDE_AGUA_AR;
-    Icon[] BORDE_AGUA_AB;
-    Icon[] BORDE_AGUA_DE;
-    Icon[] BORDE_AGUA_IZ;
+    private Icon BORDE_AGUA_AR_IZ;
+    private Icon BORDE_AGUA_AR_DE;
+    private Icon BORDE_AGUA_AB_IZ;
+    private Icon BORDE_AGUA_AB_DE;
+    private Icon BORDE_AGUA_AR_IZ_ESQUINA;
+    private Icon BORDE_AGUA_AR_DE_ESQUINA;
+    private Icon BORDE_AGUA_AB_IZ_ESQUINA;
+    private Icon BORDE_AGUA_AB_DE_ESQUINA;
+    private Icon[] BORDE_AGUA_AR;
+    private Icon[] BORDE_AGUA_AB;
+    private Icon[] BORDE_AGUA_DE;
+    private Icon[] BORDE_AGUA_IZ;
     
     //TILESET DE COSTA DE ARENA
     
-    Icon BORDE_AGUA2_AR_IZ;
-    Icon BORDE_AGUA2_AR_DE;
-    Icon BORDE_AGUA2_AB_IZ;
-    Icon BORDE_AGUA2_AB_DE;
-    Icon BORDE_AGUA2_AR_IZ_ESQUINA;
-    Icon BORDE_AGUA2_AR_DE_ESQUINA;
-    Icon BORDE_AGUA2_AB_IZ_ESQUINA;
-    Icon BORDE_AGUA2_AB_DE_ESQUINA;
-    Icon[] BORDE_AGUA2_AR;
-    Icon[] BORDE_AGUA2_AB;
-    Icon[] BORDE_AGUA2_DE;
-    Icon[] BORDE_AGUA2_IZ;
+    private Icon BORDE_AGUA2_AR_IZ;
+    private Icon BORDE_AGUA2_AR_DE;
+    private Icon BORDE_AGUA2_AB_IZ;
+    private Icon BORDE_AGUA2_AB_DE;
+    private Icon BORDE_AGUA2_AR_IZ_ESQUINA;
+    private Icon BORDE_AGUA2_AR_DE_ESQUINA;
+    private Icon BORDE_AGUA2_AB_IZ_ESQUINA;
+    private Icon BORDE_AGUA2_AB_DE_ESQUINA;
+    private Icon[] BORDE_AGUA2_AR;
+    private Icon[] BORDE_AGUA2_AB;
+    private Icon[] BORDE_AGUA2_DE;
+    private Icon[] BORDE_AGUA2_IZ;
     
     //TILESET DE CASA
-    Icon[][] CASA;
+    private Icon[][] CASA;
 
     /**
      * Constructor
      */
-    public Tileset(boolean diaNoche) {
-        this.dia = diaNoche;
+    private Tileset(boolean diaNoche) {
+        dia = diaNoche;
         
         this.BORDE_AGUA_AB_IZ_ESQUINA = crearSubimagen(diaNoche, 4, 3, 32, 32);
         this.CASA = generarCasa(diaNoche);
@@ -605,7 +605,23 @@ public class Tileset {
         return LIBRERIA;
     }
     
-    /**
+    public Icon[] getPERSONAJE_DER() {
+		return PERSONAJE_DER;
+	}
+
+	public Icon[] getPERSONAJE_IZQ() {
+		return PERSONAJE_IZQ;
+	}
+
+	public Icon[] getPERSONAJE_ARR() {
+		return PERSONAJE_ARR;
+	}
+
+	public Icon[] getPERSONAJE_ABA() {
+		return PERSONAJE_ABA;
+	}
+
+	/**
      *  INSTANCIA DE LA CLASE
      * 
      * @return 

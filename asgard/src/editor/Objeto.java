@@ -22,7 +22,8 @@ import javax.swing.JButton;
  */
 public class Objeto extends JButton{
     
-    private Puerta puerta;
+	private static final long serialVersionUID = 1594974129923270881L;
+	private Puerta puerta;
     private String descripcion = "";
     private boolean transitable = true;
     private String cod;

@@ -17,13 +17,11 @@ import javax.swing.JLabel;
  */
 public final class Nube extends JLabel implements Runnable{
     
-    private static final int PERIODO_PROCESO = Parametros.getInstance().getMILISEGUNDOS_ENTRE_FRAMES();
-
+	private static final long serialVersionUID = -5340247047673149519L;
+	private static final int PERIODO_PROCESO = Parametros.getInstance().getMILISEGUNDOS_ENTRE_FRAMES();
     private int sentidoNube;
-    
     private double posX;
     private double posY;
-    
     private Thread hilo;
     
     /**
